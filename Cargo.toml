@@ -1,0 +1,25 @@
+[package]
+name = "cokandetor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+dirs = "7.0.0"
+eframe = "0.37.0"
+egui = "0.37.0"
+egui_extras = { version = "0.37.0", features = ["syntect"] }
+futures-util = "0.3"
+ignore = "0.4.34"
+mysql = { version = "28.0.4", default-features = false, features = ["minimal-rust", "native-tls"] }
+native-tls = "0.2.18"
+notify = "8.2.1"
+postgres-native-tls = "0.5.3"
+rfd = "0.17.2"
+rusqlite = { version = "0.41.1", features = ["bundled"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+syntect = { version = "5.3", default-features = false, features = ["default-fancy"] }
+tokio = { version = "1", default-features = false, features = ["rt"] }
+tokio-postgres = "0.7.18"
+two-face = { version = "0.5.2", default-features = false, features = ["syntect-fancy"] }
+ureq = "2"

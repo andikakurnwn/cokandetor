@@ -1,0 +1,11 @@
+/target
+
+# Secrets and local app data (API keys, DB passwords, chat sessions)
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+/config.json
+/config.*.json
+/sessions/
