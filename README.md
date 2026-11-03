@@ -158,3 +158,7 @@ database baru. Klik kanan lemari untuk mengedit atau menyingkirkannya
 | `src/agent/` | Loop agent, klien Claude & OpenAI (streaming), tools file, hitung token & biaya (`usage.rs`) |
 | `src/partial_json.rs` | Parser JSON parsial untuk preview isi file yang sedang di-stream |
 | `src/project.rs` | Scan project, hitung baris, level |
+
+## Lisensi
+
+[MIT](LICENSE) © 2026 Andika Kurniawan.
