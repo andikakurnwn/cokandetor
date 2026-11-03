@@ -1125,13 +1125,17 @@ fn prompt_bar(ui: &mut Ui, projects: &mut [Project], w: &mut OfficeUi, settings:
         }
     });
     let target = &projects[w.target];
-    if target.agent.is_some() {
-        ui.horizontal(|ui| {
+    // Always one row tall, so the office doesn't re-lay out when an agent starts or stops.
+    ui.horizontal(|ui| {
+        ui.set_min_height(ui.spacing().interact_size.y);
+        if target.agent.is_some() {
             ui.spinner();
             ui.label(RichText::new(format!("{}: {}", target.entry.name, target.status)).color(theme::WARM).small());
             ui.label(RichText::new("— klik mejanya untuk melihat kode berubah live").small().weak());
-        });
-    }
+        } else {
+            ui.label(RichText::new(format!("● {} siap", target.entry.name)).small().weak());
+        }
+    });
     if send && !w.prompt.trim().is_empty() && target.agent.is_none() {
         actions.push(Action::Send {
             project: w.target,

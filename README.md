@@ -1,5 +1,7 @@
 # Cokandetor — Pixel Code Studio
 
+![Kantor Cokandetor: karyawan todo-app bangun, mengetik diskon.js, lalu tidur lagi setelah tugas selesai](docs/screenshots/office.gif)
+
 Code editor desktop Windows (Rust + egui) yang berjalan offline, dengan agent AI
 (Claude / GPT / model lokal) di dalamnya. Bedanya dengan editor biasa:
 
@@ -37,6 +39,14 @@ Code editor desktop Windows (Rust + egui) yang berjalan offline, dengan agent AI
   terhubung, karyawan baru "onboarding": agent menjelajahi project lalu menulis
   ringkasannya ke `.ckdtr/skill.md`. Setiap tugas berikutnya langsung membawa
   skill ini di awal prompt, jadi agent tidak perlu menjelajah ulang.
+
+## Tampilan
+
+| Kode ditulis live oleh agent | Kantor di malam hari |
+|---|---|
+| ![Editor dengan banner LIVE saat agent menulis web/diskon.js](docs/screenshots/editor-live.png) | ![Kantor malam: langit berbintang, lampu gantung menyala, karyawan tidur](docs/screenshots/office-night.png) |
+| **Lemari = koneksi database** | **Meter token & biaya** |
+| ![Tampilan Database: tabel, editor SQL, dan hasil query omzet per produk](docs/screenshots/database.png) | ![Panel Chat dengan total token, ukuran konteks, dan pemakaian per tugas](docs/screenshots/usage.png) |
 
 ## Skill project (.ckdtr)
 
